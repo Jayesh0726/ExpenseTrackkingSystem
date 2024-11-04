@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# Expense Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An Expense Tracker app built with the MERN stack (MongoDB, Express, React, Node.js). This project allows users to track their daily expenses, view summaries, and manage their budgets effectively. Developed collaboratively to gain hands-on experience with Git, version control, and full-stack development.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Environment Variables](#environment-variables)
+- [Contributing](#contributing)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Overview
 
-### `npm test`
+The Expense Tracker app helps users manage their personal finances by logging expenses, categorizing transactions, and viewing monthly summaries. It’s designed with a focus on secure, efficient data handling and a smooth, responsive UI.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Add Expenses**: Users can log expenses with details like category, amount, and date.
+- **View Transactions**: Filtered views for better tracking of expenses.
+- **Summary Dashboard**: Visualize spending patterns with charts and statistics.
+- **Budget Management**: Set and monitor budgets for various categories.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+- **Frontend**: React, CSS
+- **Backend**: Node.js, Express
+- **Database**: MongoDB
+- **Other**: Git/GitHub for version control, Nodemon for development
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Node.js** and **npm** installed
+- **MongoDB** installed locally or a MongoDB Atlas account
 
-## Learn More
+### Setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Jayesh0726/ExpenseTrackkingSystem.git
+   cd ExpenseTrackkingSystem
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Backend Setup**:
+   - Navigate to the server folder:
+     ```bash
+     cd server
+     ```
+   - Install backend dependencies:
+     ```bash
+     npm install
+     ```
+   - Start the backend server:
+     ```bash
+     npm run dev
+     ```
 
-### Code Splitting
+3. **Frontend Setup**:
+   - Open a new terminal, navigate to the client folder:
+     ```bash
+     cd client
+     ```
+   - Install frontend dependencies:
+     ```bash
+     npm install
+     ```
+   - Start the frontend development server:
+     ```bash
+     npm start
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Create a `.env` file in the `server` directory and add the following environment variables:
 
-### Making a Progressive Web App
+```plaintext
+PORT=8000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Make sure to keep these variables secure and not share them publicly.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
 
-### Deployment
+We’re using a branch-based workflow to collaborate effectively. Here’s how to contribute:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. **Clone the repo and create a new branch** for your feature:
+   ```bash
+   git checkout -b feature/feature-name
+   ```
 
-### `npm run build` fails to minify
+2. **Make your changes and commit** them with clear messages:
+   ```bash
+   git commit -m "feat: add transaction filter feature"
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. **Push to GitHub** and create a Pull Request:
+   ```bash
+   git push origin feature/feature-name
+   ```
+
+4. **Review and Merge**: Tag a teammate to review your PR. Once approved, it can be merged into the `dev` branch.
+
+---
+
+## License
+
+This project is open-source and available under the MIT License.
+
