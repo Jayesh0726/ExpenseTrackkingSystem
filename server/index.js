@@ -1,11 +1,14 @@
-const express = require('express');
-const app = express();
+import dotenv from "dotenv";
+import express from "express";
 
-const PORT = 8000;
+const app = express();
+dotenv.config();
+
+const PORT = process.env.PORT;
 app.get('/', (req , res)=>{
-    res.send("Hello Server");
+    res.send("Welcome to expense tracker");
 });
 
 app.listen(PORT, (error)=>{
-    console.log(`Server started on port ${PORT}`);
+    console.log(`Server running on http://localhost:${PORT}`);
 })
