@@ -27,7 +27,7 @@ async function handleGetIncome(req, res){
       }
 };
 
-module.exports = {
+export {
     handleCreateIncome,
     handleGetIncome,
 }

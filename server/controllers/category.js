@@ -24,7 +24,7 @@ async function handleGettingCategory(req, res){
       }
 };
 
-module.exports = {
+export {
     handleCreatingCategory,
     handleGettingCategory,
 }

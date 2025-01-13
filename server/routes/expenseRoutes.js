@@ -1,5 +1,5 @@
 import express from "express";
-const {handleCreateExpense, handleGetExpense} = require('../controllers/expense')
+import {handleCreateExpense, handleGetExpense} from '../controllers/expense.js';
 const router = express.Router();
 
 // Add a new expense

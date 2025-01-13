@@ -1,5 +1,5 @@
 import express from "express";
-const {handleCreateUser, handleGetUser} = require('../controllers/user');
+import {handleCreateUser, handleGetUser} from '../controllers/user.js';
 const router = express.Router();
 
 // Create a new user.

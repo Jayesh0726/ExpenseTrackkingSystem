@@ -1,5 +1,5 @@
 import express from "express";
-const {handleCreatingCategory, handleGettingCategory} = require('../controllers/category')
+import {handleCreatingCategory, handleGettingCategory} from '../controllers/category.js';
 const router = express.Router();
 
 // Create a new category

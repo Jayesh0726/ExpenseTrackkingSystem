@@ -1,5 +1,5 @@
 import express from "express";
-const {handleCreateIncome, handleGetIncome} = require('../controllers/income');
+import {handleCreateIncome, handleGetIncome} from '../controllers/income.js';
 const router = express.Router();
 
 // Add a new income entry

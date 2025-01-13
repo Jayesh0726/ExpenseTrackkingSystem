@@ -32,7 +32,7 @@ async function handleGetUser(req, res){
       }
 };
 
-module.exports = {
+export {
     handleCreateUser,
     handleGetUser,
-}
+};

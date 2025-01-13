@@ -27,7 +27,7 @@ async function handleGetExpense(req, res){
       }
 };
 
-module.exports = {
+export {
     handleCreateExpense,
     handleGetExpense,
 }
