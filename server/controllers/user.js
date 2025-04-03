@@ -32,6 +32,8 @@ async function handleGetUser(req, res){
       }
 };
 
+
+
 export {
     handleCreateUser,
     handleGetUser,
