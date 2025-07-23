@@ -1,4 +1,5 @@
 import InputField from "./InputField";
 import ButtonField from "./Button";
 import AuthLayout from "./AuthLayout";
-export { InputField, ButtonField, AuthLayout };
+import Navbar from "./Header/Navbar";
+export { InputField, ButtonField, AuthLayout, Navbar };

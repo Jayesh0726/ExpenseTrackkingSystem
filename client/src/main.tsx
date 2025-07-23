@@ -4,7 +4,7 @@ import './index.css'
 import App from './App'
 import { BrowserRouter } from 'react-router-dom'
 import Login from './pages/Login'
-import Home from './pages/Home'
+import Dashboard from './pages/Dashboard'
 import Profile from './pages/Profile'
 import SignUp from './pages/SignUp'
 import {RouterProvider, createBrowserRouter} from 'react-router-dom'
@@ -18,9 +18,10 @@ const router = createBrowserRouter([{
   path:"/",
   element: <App />,
   children:[
+    
     {
       path: "/",
-      element: <Home />,
+      element: <Dashboard />,
     },
     {
       path:"/login",
@@ -53,9 +54,7 @@ const router = createBrowserRouter([{
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
         <RouterProvider router={router} />
-      </BrowserRouter>
     </Provider>
   </StrictMode>,
 )
