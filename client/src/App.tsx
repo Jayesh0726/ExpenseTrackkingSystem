@@ -6,10 +6,12 @@ import Loader from "./components/Loader"
 import Navbar from "./components/Header/Navbar"
 import Page404 from "./pages/NotFound"
 
+
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <Page404 />
+      <Navbar />
+      
     </ThemeProvider>
   )
 }
