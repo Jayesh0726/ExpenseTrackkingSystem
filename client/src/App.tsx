@@ -10,8 +10,11 @@ import Page404 from "./pages/NotFound"
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <Navbar />
-      
+      {/* <Navbar /> */}
+      {/* <Page404 /> */}
+      {/* <Signup /> */}
+      {/* <Login /> */}
+      <Loader />
     </ThemeProvider>
   )
 }

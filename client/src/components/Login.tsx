@@ -4,6 +4,7 @@ import InputField from "./InputField"
 import { useForm } from "react-hook-form"
 import ButtonField from "./Button"
 import { Chrome, Github, Eye, EyeOff } from "lucide-react"
+import SpotLight from "./ui/spot-light"
 function Login() {
 const {
   register,
@@ -17,6 +18,9 @@ const handleGoogleOAuth = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
+      <SpotLight bgcolor={"bg-gray-100"} height={"h-64"} width={"w-64"} blur={"blur-[200px]"} left={"-left-24"} top={"top-72"} />
+      <SpotLight bgcolor={"bg-gray-100"} height={"h-24"} width={"w-24"} blur={"blur-[100px]"} left={"left-[57%]"} top={"top-[17%]"} translateX={"translate-x-[0%]"} translateY={"translate-y-[0%]"}/>
+      
       <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md relative">
       <form className="space-y-4">
         <div className="text-white text-lg font-semibold text-center">Log-In</div>
