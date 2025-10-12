@@ -20,11 +20,11 @@ function Signup() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 ">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-950 ">
       <SpotLight bgcolor={"bg-gray-100"} height={"h-64"} width={"w-64"} blur={"blur-[200px]"} left={"-left-24"} top={"top-72"} />
       <SpotLight bgcolor={"bg-gray-100"} height={"h-24"} width={"w-24"} blur={"blur-[100px]"} left={"left-[57%]"} top={"top-[13%]"} translateX={"translate-x-[0%]"} translateY={"translate-y-[0%]"}/>
       
-      <div className=" bg-[#0a0a0a5e] backdrop-blur border border-black/10 p-8 rounded-lg shadow-lg w-full max-w-md relative">
+      <div className=" bg-[#2b2b2b5e] backdrop-blur border border-black/10 p-8 rounded-lg shadow-lg w-full max-w-md relative">
         <form className="space-y-4">
           <div className="text-white text-xl font-semibold text-center">Sign-Up</div>
           <InputField
