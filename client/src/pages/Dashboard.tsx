@@ -1,22 +1,26 @@
 import React from 'react'
+import SpotLight from '@/components/ui/spot-light'
 
 function Dashboard() {
   return (
-    <main className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-32 gap-4 px-24 py-4 grid-rows-4 h-[120vh] w-[100vw] overflow-x-hidden'>
-      <div className='h-56 col-span-2 md:col-span-2 lg:col-span-1 flex items-center justify-center text-2xl font-bold bg-amber-400'>
+    <div className='flex items-center justify-center h-screen w-screen overflow-hidden'>
+      
+    <main className='grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-y-32 gap-4 px-2 justify-center  py-2 grid-rows-4 h-[100vh] w-[50vw] overflow-x-hidden bg-dark'>
+      <div className='h-60 col-span-1 flex items-center justify-center text-2xl font-bold bg-gradient-to-b from-[#4b4b4b5e] to-[#1b1b1b69] backdrop-blur border border-black/50 rounded-xl'>
         Total Balance
       </div>
-      <div className='h-56 col-span-2 md:col-span-2 lg:col-span-1 flex items-center justify-center text-2xl font-bold bg-amber-500'>  
+      <div className='h-60 col-span-1 flex items-center justify-center text-2xl font-bold bg-gradient-to-b from-[#4b4b4b5e] to-[#1b1b1b69] backdrop-blur border border-black/50 rounded-xl'>  
         Total Expense  
       </div>
-      <div className='h-56 col-span-2 md:col-span-2 lg:col-span-1 flex items-center justify-center text-2xl font-bold bg-amber-600'>Total Income</div>
-      <div className='h-16 col-span-2 md:col-span-2  lg:col-span-3 flex items-center justify-center text-2xl font-bold bg-amber-300'>Month</div>
-      <div className='h-60 col-span-2 md:col-span-2 lg:row-span-2 lg:col-span-2 flex items-center justify-center text-2xl font-bold bg-amber-900'>Spending Trends</div>
-      <div className='h-16 col-span-2 md:col-span-2  lg:col-span-1 flex items-center justify-center text-2xl font-bold bg-amber-300'>Categories</div>
-      <div className='h-16 col-span-2 md:col-span-2  lg:col-span-1 flex items-center justify-center text-2xl font-bold bg-amber-300'>Upcoming Bills</div>
-      <div className='h-80 col-span-2 md:col-span-2  lg:col-span-3 flex items-center justify-center text-2xl font-bold bg-amber-300'>Recent Transactions</div>
+      <div className='h-60 col-span-1 flex items-center justify-center text-2xl font-bold bg-gradient-to-b from-[#4b4b4b5e] to-[#1b1b1b69] backdrop-blur border border-black/50 rounded-xl'>Total Income</div>
+      <div className='h-10 col-span-2 md:col-span-2  lg:col-span-3 flex items-center justify-start text-2xl font-bold mt-24'>Month</div>
+      <div className='h-80 col-span-2 md:col-span-2 lg:row-span-2 lg:col-span-2 flex items-center justify-center text-2xl font-bold bg-gradient-to-b from-[#4b4b4b5e] to-[#1b1b1b69] backdrop-blur border border-black/50 rounded-xl -mt-3'>Spending Trends</div>
+      <div className='h-[9.5rem] col-span-2 md:col-span-2  lg:col-span-1 flex items-center justify-center text-2xl font-bold bg-gradient-to-b from-[#4b4b4b5e] to-[#1b1b1b69] backdrop-blur border border-black/50 rounded-xl -mt-3'>Categories</div>
+      <div className='h-[9.5rem] col-span-2 md:col-span-2  lg:col-span-1 flex items-center justify-center text-2xl font-bold bg-gradient-to-b from-[#4b4b4b5e] to-[#1b1b1b69] backdrop-blur border border-black/50 rounded-xl -mt-1'>Upcoming Bills</div>
+      <div className='h-72 col-span-2 md:col-span-2  lg:col-span-3 flex items-center justify-center text-2xl font-bold bg-gradient-to-b from-[#4b4b4b5e] to-[#1b1b1b69] backdrop-blur border border-black/50 rounded-xl'>Recent Transactions</div>
 
     </main>
+    </div>
   )
 }
 

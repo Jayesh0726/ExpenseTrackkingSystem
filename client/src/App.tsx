@@ -10,13 +10,15 @@ import Dashboard from "./pages/Dashboard"
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      {/* <Navbar /> */}
+    <ThemeProvider defaultTheme="dark"  storageKey="vite-ui-theme">
+      <div className="w-screen overflow-x-hidden">
+        {/* <Navbar /> */}
       {/* <Page404 /> */}
       {/* <Signup /> */}
       <Dashboard />
       {/* <Login /> */}
       {/* <Loader /> */}
+      </div>
     </ThemeProvider>
   )
 }

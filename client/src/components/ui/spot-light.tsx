@@ -9,6 +9,8 @@ interface SpotLightProps {
     top?: String;
     translateX?: String;
     translateY?: String;
+    RotateX?: String;
+
 }
 
 const SpotLight = React.forwardRef<HTMLDivElement, SpotLightProps>(function spotLight({
@@ -20,11 +22,12 @@ left= "",
 top= "",
 translateX= "",
 translateY= "",
+RotateX= "",
 ...props
 }, ref ){
     const id = useId();
     return (
-        <div id={id} className={`overflow-x-hidden rounded-full absolute ${bgcolor} ${height} ${width} ${blur} ${left} ${top} ${translateX} ${translateY}`} {...props}
+        <div id={id} className={`overflow-x-hidden rounded-full absolute ${RotateX} ${bgcolor} ${height} ${width} ${blur} ${left} ${top} ${translateX} ${translateY}`} {...props}
         ref={ref}
     >
 
