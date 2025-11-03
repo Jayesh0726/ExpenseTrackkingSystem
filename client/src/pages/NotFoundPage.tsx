@@ -3,7 +3,7 @@ import React from 'react'
 
 import { Link } from "react-router-dom";
 
-const NotFound: React.FC = () => {
+const NotFoundPage: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-950 p-4 text-center">
       <img
@@ -24,7 +24,7 @@ const NotFound: React.FC = () => {
   );
 };
 
-export default NotFound;
+export default NotFoundPage;
 
 
 

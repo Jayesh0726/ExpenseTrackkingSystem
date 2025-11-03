@@ -4,7 +4,7 @@ import InputField from "./InputField"
 import { useForm } from "react-hook-form"
 import ButtonField from "./Button"
 import { Chrome, Github, Eye, EyeOff } from "lucide-react"
-import SpotLight from "./ui/spot-light"
+import { NavLink } from "react-router-dom"
 
 function Signup() {
   const {
@@ -20,11 +20,8 @@ function Signup() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-950 ">
-      <SpotLight bgcolor={"bg-gray-100"} height={"h-64"} width={"w-64"} blur={"blur-[200px]"} left={"-left-24"} top={"top-72"} />
-      <SpotLight bgcolor={"bg-gray-100"} height={"h-24"} width={"w-24"} blur={"blur-[100px]"} left={"left-[57%]"} top={"top-[13%]"} translateX={"translate-x-[0%]"} translateY={"translate-y-[0%]"}/>
-      
-      <div className=" bg-[#2b2b2b5e] backdrop-blur border border-black/10 p-8 rounded-lg shadow-lg w-full max-w-md relative">
+    <div>
+      <div className=" bg-[#4141415e] backdrop-blur border border-black/10 p-8 rounded-lg shadow-lg w-full max-w-md relative">
         <form className="space-y-4">
           <div className="text-white text-xl font-semibold text-center">Sign-Up</div>
           <InputField
@@ -127,9 +124,9 @@ function Signup() {
             icon={<Github className="h-4 w-4 mr-2" />}
           />
         </form>
-        <p className="mt-4 text-center text-base text-white/60">
+        <NavLink to='/login' className="mt-4 block text-center text-base text-white/60">
           Already have an account?&nbsp;
-        </p>
+        </NavLink>
       </div>
     </div>
   )
