@@ -7,6 +7,7 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
+import {Loader} from "./components/index";
 import {
   LoginPage,
   DashboardPage,
@@ -22,44 +23,6 @@ import { Provider } from "react-redux";
 // Ensure the correct path and file exist; if your store file is named differently or in a different location, update the import accordingly.
 import store from "./store/store";
 import { AuthLayout } from "./components/index";
-
-// const router = createBrowserRouter([{
-//   path:"/",
-//   element: <Layout />,
-//   children:[
-
-//     {
-//       path: "/",
-//       element: <Dashboard />,
-//     },
-//     {
-//       path:"/login",
-//       element: (
-//         <AuthLayout authentication={false}>
-//           <Login />
-//         </AuthLayout>
-//       ),
-//     },
-//     {
-//       path:"/signup",
-//       element: (
-//         <AuthLayout authentication={false}>
-//           <SignUp />
-//         </AuthLayout>
-//       )
-//     },
-//     {
-//       path: "/profile",
-//       element: (
-//         <AuthLayout authentication>
-//           {" "}
-//           <Profile />
-//         </AuthLayout>
-//       )
-//     }
-//   ]
-// }
-// ])
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -112,6 +75,10 @@ const router = createBrowserRouter(
             <TransactionPage />
           </AuthLayout>
         }
+      />
+      <Route 
+      path="*"
+      element={<NotFoundPage />}
       />
     </Route>
   )
